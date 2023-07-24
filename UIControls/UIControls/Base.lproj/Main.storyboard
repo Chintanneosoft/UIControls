@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9B3-oI-D9P">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SwitchVC-->
+        <scene sceneID="jbZ-8i-2p2">
+            <objects>
+                <viewController storyboardIdentifier="UISwitchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HZo-dH-fgy" customClass="UISwitchVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxk-u3-MXO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ia9-At-eMO"/>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Du-ij-Yci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4537" y="646"/>
+        </scene>
+        <!--Picker ViewVC-->
+        <scene sceneID="nyu-j6-1Xl">
+            <objects>
+                <viewController storyboardIdentifier="UIPickerViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qWu-zs-gdh" customClass="UIPickerViewVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pLi-U5-1kq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN2-jF-HCX">
+                                <rect key="frame" x="36.666666666666657" y="318" width="320" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqz-Gt-rlc">
+                                <rect key="frame" x="196.66666666666666" y="109" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jJB-L9-W18"/>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oqz-Gt-rlc" firstAttribute="centerX" secondItem="pLi-U5-1kq" secondAttribute="centerX" id="CMH-PZ-k5d"/>
+                            <constraint firstItem="Oqz-Gt-rlc" firstAttribute="top" secondItem="jJB-L9-W18" secondAttribute="top" constant="50" id="K9F-yJ-vhH"/>
+                            <constraint firstItem="ZN2-jF-HCX" firstAttribute="centerY" secondItem="pLi-U5-1kq" secondAttribute="centerY" id="SDX-l6-Q6H"/>
+                            <constraint firstItem="ZN2-jF-HCX" firstAttribute="centerX" secondItem="pLi-U5-1kq" secondAttribute="centerX" id="VAe-VN-Rmq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="ZN2-jF-HCX" id="B3b-TC-xuM"/>
+                        <outlet property="selectedValue" destination="Oqz-Gt-rlc" id="j5j-t6-2sQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfj-hl-NbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853" y="1299"/>
+        </scene>
+        <!--Page ControlVC-->
+        <scene sceneID="Ktn-IM-uts">
+            <objects>
+                <viewController storyboardIdentifier="UIPageControlVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PaU-yB-Bsl" customClass="UIPageControlVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8f-dN-Xwj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="IaS-e3-cZZ">
+                                <rect key="frame" x="138" y="540" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ABG-TB-9EJ"/>
+                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwN-dR-7M2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4537" y="1299"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="Cya-gw-6MC">
+            <objects>
+                <viewController storyboardIdentifier="UIWebViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jWY-kL-sHs" customClass="UIWebViewVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1y6-gl-33G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPj-wk-m3H">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="08z-9f-2mP">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JIu-CQ-YYM"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zPj-wk-m3H" firstAttribute="leading" secondItem="JIu-CQ-YYM" secondAttribute="leading" id="1BF-o2-BJO"/>
+                            <constraint firstItem="JIu-CQ-YYM" firstAttribute="bottom" secondItem="zPj-wk-m3H" secondAttribute="bottom" id="Aik-z7-lTD"/>
+                            <constraint firstItem="zPj-wk-m3H" firstAttribute="top" secondItem="JIu-CQ-YYM" secondAttribute="top" id="CEG-Mk-PYO"/>
+                            <constraint firstItem="JIu-CQ-YYM" firstAttribute="trailing" secondItem="zPj-wk-m3H" secondAttribute="trailing" id="DZB-8x-FKp"/>
+                            <constraint firstItem="08z-9f-2mP" firstAttribute="centerX" secondItem="1y6-gl-33G" secondAttribute="centerX" id="V8F-FP-1Dq"/>
+                            <constraint firstItem="08z-9f-2mP" firstAttribute="centerY" secondItem="1y6-gl-33G" secondAttribute="centerY" id="YeJ-FR-kF2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="08z-9f-2mP" id="inr-jp-Otm"/>
+                        <outlet property="webView" destination="zPj-wk-m3H" id="aZ7-ap-h8n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV9-jm-DjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3143" y="1299"/>
+        </scene>
+        <!--SliderVC-->
+        <scene sceneID="1LA-mk-eMy">
+            <objects>
+                <viewController storyboardIdentifier="UISliderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ycV-jc-Bzn" customClass="UISliderVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hQh-ft-mRb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range 0-100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-mq-ELA">
+                                <rect key="frame" x="147.33333333333334" y="415.66666666666669" width="98.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-p9-F6U">
+                                <rect key="frame" x="48" y="466.66666666666669" width="297" height="31"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="ycV-jc-Bzn" eventType="valueChanged" id="gWE-Q1-lvl"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="30j-9e-cWM"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hb7-mq-ELA" firstAttribute="centerX" secondItem="hQh-ft-mRb" secondAttribute="centerX" id="5hX-dB-Qfs"/>
+                            <constraint firstItem="Rwx-p9-F6U" firstAttribute="centerX" secondItem="hQh-ft-mRb" secondAttribute="centerX" id="7rG-Ns-5tZ"/>
+                            <constraint firstItem="Hb7-mq-ELA" firstAttribute="centerY" secondItem="hQh-ft-mRb" secondAttribute="centerY" id="G7h-Q7-P31"/>
+                            <constraint firstItem="30j-9e-cWM" firstAttribute="trailing" secondItem="Rwx-p9-F6U" secondAttribute="trailing" constant="50" id="b29-PN-DYd"/>
+                            <constraint firstItem="Rwx-p9-F6U" firstAttribute="top" secondItem="Hb7-mq-ELA" secondAttribute="bottom" constant="30" id="hay-Pe-svc"/>
+                            <constraint firstItem="Rwx-p9-F6U" firstAttribute="leading" secondItem="30j-9e-cWM" secondAttribute="leading" constant="50" id="prW-er-2uE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="Hb7-mq-ELA" id="xqR-Xy-NNv"/>
+                        <outlet property="slider" destination="Rwx-p9-F6U" id="R5R-Wz-N7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZa-Ms-bIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437" y="1299"/>
+        </scene>
+        <!--Activity IndicatorVC-->
+        <scene sceneID="ogL-5W-6LL">
+            <objects>
+                <viewController storyboardIdentifier="UIActivityIndicatorVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H9e-Fn-7lT" customClass="UIActivityIndicatorVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nyO-PM-tCk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="v7w-L2-3RD">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BO-bg-aaf">
+                                <rect key="frame" x="166.66666666666666" y="456" width="59.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stop"/>
+                                <connections>
+                                    <action selector="stopTapped:" destination="H9e-Fn-7lT" eventType="touchUpInside" id="d14-xR-Qvp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-rK-tUh">
+                                <rect key="frame" x="166" y="361" width="61.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="startTapped:" destination="H9e-Fn-7lT" eventType="touchUpInside" id="hfo-f5-4mD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ywa-Bj-Ret"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v7w-L2-3RD" firstAttribute="top" secondItem="A1d-rK-tUh" secondAttribute="bottom" constant="20" id="6Ry-PV-Im3"/>
+                            <constraint firstItem="v7w-L2-3RD" firstAttribute="centerY" secondItem="nyO-PM-tCk" secondAttribute="centerY" id="95a-mF-jFG"/>
+                            <constraint firstItem="0BO-bg-aaf" firstAttribute="top" secondItem="v7w-L2-3RD" secondAttribute="bottom" constant="20" id="EWv-45-KgG"/>
+                            <constraint firstItem="A1d-rK-tUh" firstAttribute="centerX" secondItem="nyO-PM-tCk" secondAttribute="centerX" id="dHb-gM-gCK"/>
+                            <constraint firstItem="0BO-bg-aaf" firstAttribute="centerX" secondItem="nyO-PM-tCk" secondAttribute="centerX" id="lPu-QL-jXW"/>
+                            <constraint firstItem="v7w-L2-3RD" firstAttribute="centerX" secondItem="nyO-PM-tCk" secondAttribute="centerX" id="xrK-Yb-sOR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="v7w-L2-3RD" id="gn2-aT-RPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACX-Jn-aPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="1299"/>
+        </scene>
+        <!--Date PickerVC-->
+        <scene sceneID="hkH-2O-EjI">
+            <objects>
+                <viewController storyboardIdentifier="UIDatePickerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wip-1Q-MgD" customClass="UIDatePickerVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjP-Ut-efh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker hidden="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="opV-rs-xjX">
+                                <rect key="frame" x="20" y="109" width="353" height="34.333333333333343"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="wip-1Q-MgD" eventType="valueChanged" id="GXc-PH-YTp"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vu-64-D28">
+                                <rect key="frame" x="120" y="733" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click"/>
+                                <connections>
+                                    <action selector="btnTapped:" destination="wip-1Q-MgD" eventType="touchUpInside" id="fEL-PL-tRb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-96-8Am">
+                                <rect key="frame" x="196.66666666666666" y="693" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mFD-QI-RWS"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mFD-QI-RWS" firstAttribute="bottom" secondItem="9vu-64-D28" secondAttribute="bottom" constant="50" id="5HA-sZ-vT6"/>
+                            <constraint firstItem="9vu-64-D28" firstAttribute="leading" secondItem="mFD-QI-RWS" secondAttribute="leading" constant="120" id="78B-Pw-06b"/>
+                            <constraint firstItem="opV-rs-xjX" firstAttribute="top" secondItem="mFD-QI-RWS" secondAttribute="top" constant="50" id="B6q-LW-s8I"/>
+                            <constraint firstItem="mFD-QI-RWS" firstAttribute="trailing" secondItem="9vu-64-D28" secondAttribute="trailing" constant="120" id="BKh-sW-QLH"/>
+                            <constraint firstItem="opV-rs-xjX" firstAttribute="leading" secondItem="gjP-Ut-efh" secondAttribute="leading" constant="20" id="VmI-Hv-2zU"/>
+                            <constraint firstItem="cBW-96-8Am" firstAttribute="centerX" secondItem="gjP-Ut-efh" secondAttribute="centerX" id="eaX-KB-vgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="opV-rs-xjX" secondAttribute="trailing" constant="20" id="qOV-1N-gQj"/>
+                            <constraint firstItem="9vu-64-D28" firstAttribute="top" secondItem="cBW-96-8Am" secondAttribute="bottom" constant="40" id="uaD-py-l4A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnClicked" destination="9vu-64-D28" id="l9Z-nw-iJ0"/>
+                        <outlet property="dateSelected" destination="cBW-96-8Am" id="Cry-yA-BKb"/>
+                        <outlet property="datepicker" destination="opV-rs-xjX" id="471-Ym-Ifu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ZZ-Q9-7Mf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739.6946564885495" y="645.77464788732402"/>
+        </scene>
+        <!--StepperVC-->
+        <scene sceneID="q8m-Tt-szf">
+            <objects>
+                <viewController storyboardIdentifier="UIStepperVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1es-SK-wxo" customClass="UIStepperVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2K4-Zf-FmI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MtO-Ud-xfX">
+                                <rect key="frame" x="149.66666666666666" y="410" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperValueChange:" destination="1es-SK-wxo" eventType="valueChanged" id="ScC-Ck-H06"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEz-13-Hl1">
+                                <rect key="frame" x="184.66666666666666" y="369.66666666666669" width="24" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gpx-UW-CiP"/>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BEz-13-Hl1" firstAttribute="centerX" secondItem="2K4-Zf-FmI" secondAttribute="centerX" id="Gqz-6l-aoW"/>
+                            <constraint firstItem="MtO-Ud-xfX" firstAttribute="top" secondItem="BEz-13-Hl1" secondAttribute="bottom" constant="20" id="Rl2-el-JtS"/>
+                            <constraint firstItem="MtO-Ud-xfX" firstAttribute="centerX" secondItem="2K4-Zf-FmI" secondAttribute="centerX" id="kRO-LV-N3t"/>
+                            <constraint firstItem="MtO-Ud-xfX" firstAttribute="centerY" secondItem="2K4-Zf-FmI" secondAttribute="centerY" id="rRf-3U-sMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stepper" destination="MtO-Ud-xfX" id="lb0-Hj-Njd"/>
+                        <outlet property="valueLabel" destination="BEz-13-Hl1" id="a8Y-FA-vgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qc-Yx-khg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437" y="646"/>
+        </scene>
+        <!--SegmentVC-->
+        <scene sceneID="Uft-cv-5oQ">
+            <objects>
+                <viewController storyboardIdentifier="UISegmentVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hRq-Kb-WMd" customClass="UISegmentVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rwv-FM-I4S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PTm-h1-nsV"/>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dug-TN-V4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4538" y="4"/>
+        </scene>
+        <!--Progress ViewVC-->
+        <scene sceneID="x9J-J7-ycy">
+            <objects>
+                <viewController storyboardIdentifier="UIProgressViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="05Z-7Q-3h6" customClass="UIProgressViewVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQ1-pI-DiS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="62u-e9-n1K">
+                                <rect key="frame" x="120" y="424" width="153" height="4"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="3pC-OY-GT6">
+                                <rect key="frame" x="143" y="359.66666666666669" width="107" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbv-dk-Jvw">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="1"/>
+                                        <connections>
+                                            <action selector="btn1Tapped:" destination="05Z-7Q-3h6" eventType="touchUpInside" id="9Ch-mm-7Ts"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cK-Li-Aqg">
+                                        <rect key="frame" x="73" y="0.0" width="34" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="2"/>
+                                        <connections>
+                                            <action selector="btn2Tapped:" destination="05Z-7Q-3h6" eventType="touchUpInside" id="Oxi-kw-b3B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-Eq-ARF">
+                                <rect key="frame" x="164.33333333333334" y="458" width="64.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done"/>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="05Z-7Q-3h6" eventType="touchUpInside" id="mC4-d6-cQk"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7t1-Rf-9cl">
+                                <rect key="frame" x="120" y="109" width="153" height="4"/>
+                            </progressView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submited" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBI-V5-qY1">
+                                <rect key="frame" x="160" y="133" width="73" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s9n-YD-Cwg"/>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="62u-e9-n1K" firstAttribute="centerY" secondItem="cQ1-pI-DiS" secondAttribute="centerY" id="67v-fA-vMX"/>
+                            <constraint firstItem="iBI-V5-qY1" firstAttribute="top" secondItem="7t1-Rf-9cl" secondAttribute="bottom" constant="20" id="7gD-ka-5a7"/>
+                            <constraint firstItem="MfZ-Eq-ARF" firstAttribute="centerX" secondItem="cQ1-pI-DiS" secondAttribute="centerX" id="ApM-g6-17U"/>
+                            <constraint firstItem="iBI-V5-qY1" firstAttribute="centerX" secondItem="cQ1-pI-DiS" secondAttribute="centerX" id="CAI-e3-t04"/>
+                            <constraint firstItem="7t1-Rf-9cl" firstAttribute="top" secondItem="s9n-YD-Cwg" secondAttribute="top" constant="50" id="FMw-c2-jMl"/>
+                            <constraint firstItem="7t1-Rf-9cl" firstAttribute="leading" secondItem="s9n-YD-Cwg" secondAttribute="leading" constant="120" id="FnU-Yu-xGO"/>
+                            <constraint firstItem="s9n-YD-Cwg" firstAttribute="trailing" secondItem="7t1-Rf-9cl" secondAttribute="trailing" constant="120" id="WwZ-XX-fT5"/>
+                            <constraint firstItem="s9n-YD-Cwg" firstAttribute="trailing" secondItem="62u-e9-n1K" secondAttribute="trailing" constant="120" id="hSl-sz-eC1"/>
+                            <constraint firstItem="3pC-OY-GT6" firstAttribute="centerX" secondItem="cQ1-pI-DiS" secondAttribute="centerX" id="j2Z-gB-Ynq"/>
+                            <constraint firstItem="62u-e9-n1K" firstAttribute="top" secondItem="3pC-OY-GT6" secondAttribute="bottom" constant="30" id="noZ-TS-d5M"/>
+                            <constraint firstItem="62u-e9-n1K" firstAttribute="leading" secondItem="s9n-YD-Cwg" secondAttribute="leading" constant="120" id="ptp-jZ-WHC"/>
+                            <constraint firstItem="MfZ-Eq-ARF" firstAttribute="top" secondItem="62u-e9-n1K" secondAttribute="bottom" constant="30" id="rBZ-JY-9Bv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="Sbv-dk-Jvw" id="V9c-D4-855"/>
+                        <outlet property="btn2" destination="2cK-Li-Aqg" id="z4B-tv-WNi"/>
+                        <outlet property="btnDone" destination="MfZ-Eq-ARF" id="ge5-dW-gta"/>
+                        <outlet property="progressView1" destination="7t1-Rf-9cl" id="Htk-Dg-EG6"/>
+                        <outlet property="progressView2" destination="62u-e9-n1K" id="Fq6-tg-T7c"/>
+                        <outlet property="resultLabel" destination="iBI-V5-qY1" id="4BX-sh-xxb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27h-Md-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3144" y="646"/>
+        </scene>
+        <!--Image ViewVC-->
+        <scene sceneID="KYD-ok-Kvz">
+            <objects>
+                <viewController storyboardIdentifier="UIImageViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oqv-b8-bUq" customClass="UIImageViewVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rVk-XI-WJc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vOA-aA-aJg"/>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5JM-8P-ENG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853" y="646"/>
+        </scene>
+        <!--Text FieldVC-->
+        <scene sceneID="N9X-OM-VBq">
+            <objects>
+                <viewController storyboardIdentifier="UITextFieldVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hEK-Fr-8Bt" customClass="UITextFieldVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uf7-DV-B8F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s6S-3S-Is8"/>
+                        <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywt-f8-ctW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853" y="4"/>
+        </scene>
+        <!--Topics-->
+        <scene sceneID="FHW-Hs-awF">
+            <objects>
+                <viewController storyboardIdentifier="InitialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uJG-Lx-qCY" customClass="InitialViewController" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wed-ef-yhD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-3F-bop">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pa7-0G-CWC">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="970"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mLx-r8-E06">
+                                                <rect key="frame" x="60" y="20" width="273" height="950"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-bp-jcz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UILabel">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UILabelTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="QVQ-e7-tF2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-Ji-WSz">
+                                                        <rect key="frame" x="0.0" y="70" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIButton">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIButtonTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="cr8-1M-8FC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-TL-rlx">
+                                                        <rect key="frame" x="0.0" y="140" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UITextField">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UITextFieldTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="B03-je-TSZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QG-Mb-jjg">
+                                                        <rect key="frame" x="0.0" y="210" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UISegment">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UISegmentTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="CaJ-Nt-DjI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAT-vw-gil">
+                                                        <rect key="frame" x="0.0" y="280" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UISwitch">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UISwitchTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="qKg-Ba-vnx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B20-1h-p1G">
+                                                        <rect key="frame" x="0.0" y="350" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIImageView">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIImageViewTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="yqH-L8-KU3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-Mf-AjI">
+                                                        <rect key="frame" x="0.0" y="420" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIProgressView">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIProgressViewTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="SRx-9A-AtN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAJ-T9-M4W">
+                                                        <rect key="frame" x="0.0" y="490" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIStepper">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIStepperTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="g4E-8i-EMT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-Ys-cW6">
+                                                        <rect key="frame" x="0.0" y="560" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIDatePicker">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIDatePickerTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="jBw-Jd-xab"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-7a-pSL">
+                                                        <rect key="frame" x="0.0" y="630" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIActivityIndicator">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIActivityIndicatorTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="72l-EH-6Hm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-Re-LE8">
+                                                        <rect key="frame" x="0.0" y="700" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UISlider">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UISliderTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="3yF-s3-wJx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhJ-e1-Mq8">
+                                                        <rect key="frame" x="0.0" y="770" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIWebView">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIWebViewTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="rFo-Ee-7kV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-rl-fCN">
+                                                        <rect key="frame" x="0.0" y="840" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIPickerView">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIPickerViewTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="G5U-vx-PHW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-fi-LnP">
+                                                        <rect key="frame" x="0.0" y="910" width="273" height="40"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                        <state key="normal" title="UIPageControl">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="UIPageControlTapped:" destination="uJG-Lx-qCY" eventType="touchUpInside" id="gY1-WK-IA9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mLx-r8-E06" firstAttribute="top" secondItem="Pa7-0G-CWC" secondAttribute="top" constant="20" id="HiP-0Y-I4k"/>
+                                            <constraint firstAttribute="bottom" secondItem="mLx-r8-E06" secondAttribute="bottom" id="Qdf-bt-qF9"/>
+                                            <constraint firstItem="mLx-r8-E06" firstAttribute="leading" secondItem="Pa7-0G-CWC" secondAttribute="leading" constant="60" id="UKO-GW-IQJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="mLx-r8-E06" secondAttribute="trailing" constant="60" id="VLQ-Aq-o4A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pa7-0G-CWC" firstAttribute="leading" secondItem="iNF-3F-bop" secondAttribute="leading" id="1OG-1k-1Qv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pa7-0G-CWC" secondAttribute="bottom" id="9Yu-Bg-LwM"/>
+                                    <constraint firstItem="Pa7-0G-CWC" firstAttribute="top" secondItem="iNF-3F-bop" secondAttribute="top" id="Hey-69-B59"/>
+                                    <constraint firstItem="Pa7-0G-CWC" firstAttribute="width" secondItem="iNF-3F-bop" secondAttribute="width" id="bjb-Ol-0DQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pa7-0G-CWC" secondAttribute="trailing" id="wUy-1n-GKK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ncd-ef-DTh"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="iNF-3F-bop" firstAttribute="trailing" secondItem="Ncd-ef-DTh" secondAttribute="trailing" id="7NC-eU-AMj"/>
+                            <constraint firstItem="iNF-3F-bop" firstAttribute="leading" secondItem="Ncd-ef-DTh" secondAttribute="leading" id="Cu9-HD-zAx"/>
+                            <constraint firstItem="iNF-3F-bop" firstAttribute="bottom" secondItem="Ncd-ef-DTh" secondAttribute="bottom" id="UYd-iF-b4j"/>
+                            <constraint firstItem="iNF-3F-bop" firstAttribute="top" secondItem="Ncd-ef-DTh" secondAttribute="top" id="yck-Hp-9lC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Topics" id="sNb-D8-gi2"/>
+                    <connections>
+                        <outletCollection property="UIButtons" destination="tNs-bp-jcz" collectionClass="NSMutableArray" id="ajr-5r-Wc9"/>
+                        <outletCollection property="UIButtons" destination="Fzk-TL-rlx" collectionClass="NSMutableArray" id="SmW-zT-rXV"/>
+                        <outletCollection property="UIButtons" destination="5QG-Mb-jjg" collectionClass="NSMutableArray" id="UdZ-uR-OFL"/>
+                        <outletCollection property="UIButtons" destination="GAT-vw-gil" collectionClass="NSMutableArray" id="vsQ-pa-CAo"/>
+                        <outletCollection property="UIButtons" destination="B20-1h-p1G" collectionClass="NSMutableArray" id="2KK-ys-jhr"/>
+                        <outletCollection property="UIButtons" destination="tdd-Mf-AjI" collectionClass="NSMutableArray" id="bNh-iP-Gkr"/>
+                        <outletCollection property="UIButtons" destination="LAJ-T9-M4W" collectionClass="NSMutableArray" id="BEe-2h-X8A"/>
+                        <outletCollection property="UIButtons" destination="JjF-Ys-cW6" collectionClass="NSMutableArray" id="hhi-sp-tLg"/>
+                        <outletCollection property="UIButtons" destination="QVg-Ji-WSz" collectionClass="NSMutableArray" id="XLc-1q-Aep"/>
+                        <outletCollection property="UIButtons" destination="hXm-7a-pSL" collectionClass="NSMutableArray" id="nJV-FX-ZGe"/>
+                        <outletCollection property="UIButtons" destination="Dy0-Re-LE8" collectionClass="NSMutableArray" id="ZDH-dv-tbK"/>
+                        <outletCollection property="UIButtons" destination="RhJ-e1-Mq8" collectionClass="NSMutableArray" id="Ztr-5P-Al2"/>
+                        <outletCollection property="UIButtons" destination="x2N-rl-fCN" collectionClass="NSMutableArray" id="rg1-1e-d7z"/>
+                        <outletCollection property="UIButtons" destination="0hD-fi-LnP" collectionClass="NSMutableArray" id="Kci-I0-QI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwR-ue-u5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739.6946564885495" y="3.5211267605633805"/>
+        </scene>
+        <!--LabelVC-->
+        <scene sceneID="ofm-oH-Dh7">
+            <objects>
+                <viewController storyboardIdentifier="UILabelVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="STq-Xu-6SC" customClass="UILabelVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRi-Fn-zu2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lZW-Jg-dzG"/>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buF-4B-9nb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.4045801526718" y="3.5211267605633805"/>
+        </scene>
+        <!--ButtonVC-->
+        <scene sceneID="Iv4-Nv-iGD">
+            <objects>
+                <viewController storyboardIdentifier="UIButtonVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hKo-y5-O7T" customClass="UIButtonVC" customModule="UIControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfN-tv-NSW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q7m-pe-sqD"/>
+                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yZ-mF-O2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3144.2748091603053" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4sC-sy-Cm9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9B3-oI-D9P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrowshape.turn.up.left.fill" catalog="system" backIndicatorTransitionMaskImage="arrowshape.turn.up.backward.circle.fill" id="nGl-3k-NSN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" systemColor="systemPinkColor"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uJG-Lx-qCY" kind="relationship" relationship="rootViewController" id="cGc-pA-J0k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7j-1Q-YfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812.97709923664115" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.backward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
